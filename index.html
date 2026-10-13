@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Intelligence designed to evolve — a modular AI platform for production applications." />
-    <title>Intelligence Designed To Evolve</title>
+    <title>PerfPilot: find out why your site is slow</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -34,54 +34,43 @@
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
 
-        <a class="sign-in desktop-sign-in" href="#signin">Sign in</a>
+        <a class="sign-in desktop-sign-in" href="#signin">Try Demo</a>
 
         <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </header>
 
-      <main class="hero">
-        <section class="hero-copy" aria-labelledby="hero-title">
-          <div class="trust-row anim" style="--d: 0.05s" aria-label="Trusted by 2000 plus enterprises">
-            <div class="trust-avatars" aria-hidden="true">
-              <span class="avatar avatar-one"><span><i class="fa-brands fa-microsoft"></i></span></span>
-              <span class="avatar avatar-two"><span><i class="fa-brands fa-amazon"></i></span></span>
-              <span class="avatar avatar-three"><span><i class="fa-brands fa-google"></i></span></span>
-            </div>
-            <span class="trust-pill">Trusted by 2000+ Enterprises</span>
-          </div>
+      
 
           <h1 class="headline" id="hero-title">
-            <span class="headline-line headline-line-one">Intelligence</span>
-            <span class="headline-line headline-line-two">Designed To Evolve</span>
+            <span class="headline-line headline-line-one">Slow Sites</span>
+            <span class="headline-line headline-line-two">Diagnosed</span>
           </h1>
 
-          <p class="subhead anim" style="--d: 0.28s">Build applications that reason, adapt and collaborate using a modular AI platform designed for production.</p>
+          <p class="subhead anim" style="--d: 0.28s">Paste a URL. PerfPilot runs Lighthouse, finds the root causes, and gives you a ranked list of fixes.</p>
 
           <div class="chat-input-wrap anim" style="--d: 0.4s">
             <form class="chat-input" id="chat-input" aria-label="AI chat input">
               <div class="chat-field">
                 <div class="chat-attachments" id="chat-attachments" aria-live="polite"></div>
-                <textarea id="chat-textarea" rows="2" placeholder="Ask anything, or drop files…" aria-label="Chat message"></textarea>
+                <textarea id="chat-textarea" rows="2" placeholder="Paste a URL to audit, e.g. https://yoursite.com" aria-label="Chat message"></textarea>
               </div>
               <div class="chat-toolbar">
                 <div class="chat-tools">
-                  <button class="chat-icon-button" id="attach-files" type="button" aria-label="Attach files" title="Attach files"><i class="fa-solid fa-paperclip"></i></button>
-                  <button class="chat-icon-button" id="attach-images" type="button" aria-label="Attach images" title="Attach images"><i class="fa-regular fa-image"></i></button>
+                  
                   <input id="chat-file-input" type="file" accept="image/*,application/pdf,text/*" multiple hidden />
                 </div>
                 <div class="chat-submit-tools">
                   <div class="model-picker">
                     <button class="model-trigger" id="model-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Model: Pro">
                       <i class="fa-solid fa-sparkles model-current-icon" aria-hidden="true"></i>
-                      <span id="model-label">Pro</span>
+                      <span id="model-label">Mobile</span>
                       <i class="fa-solid fa-chevron-down model-chevron" aria-hidden="true"></i>
                     </button>
                     <div class="model-menu" id="model-menu" role="listbox" aria-label="Choose a model" hidden>
-                      <button type="button" role="option" aria-selected="false" data-model="fast" data-label="Fast" data-icon="fa-rocket"><i class="fa-solid fa-rocket"></i><span><strong>Fast</strong><small>Snappiest replies. Great for quick edits</small></span></button>
-                      <button type="button" role="option" aria-selected="false" data-model="thinking" data-label="Thinking" data-icon="fa-lightbulb"><i class="fa-regular fa-lightbulb"></i><span><strong>Thinking</strong><small>Step-by-step reasoning for tougher prompts</small></span></button>
-                      <button type="button" role="option" aria-selected="true" data-model="pro" data-label="Pro" data-icon="fa-sparkles"><i class="fa-solid fa-sparkles"></i><span><strong>Pro</strong><small>Top quality with multimodal + tools</small></span><b class="model-check">✓</b></button>
+                      <button type="button" role="option" aria-selected="false" data-model="fast" data-label="Fast" data-icon="fa-rocket"><i class="fa-solid fa-rocket"></i><span><strong>Mobile</strong></span></button>
+                      <button type="button" role="option" aria-selected="false" data-model="thinking" data-label="Thinking" data-icon="fa-lightbulb"><i class="fa-regular fa-lightbulb"></i><span><strong>Dekstop</strong></span></button>
                     </div>
                   </div>
                   <button class="send-button" id="send-button" type="submit" aria-label="Send message" disabled><i class="fa-solid fa-arrow-up"></i></button>
